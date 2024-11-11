@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <!----Font awesome cdn  font icon css -->
+    
+    <meta name="description" content="Portfolio of Ghazal Bouta, a full-stack web developer."><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  
+</head>
+<body>
+     <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-g"></i>
+                    <div class="logo-text">Ghazal Bouta</div>
+                </div>
+                <nav>
+                  
+                    <ul class="navlinks">
+                        <li><a href="./index.html" target="_top">Home</a></li>
+                        <li><a href="./Projects.html" target="_top">Projects</a></li>
+                        <li><a href="./Contact.html" target="_top">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="container">
+                 <div class="hero-pic">
+                    <img src="images/photo_2024-11-05_23-54-12.jpg" alt="Profile picture of Ghazal Bouta">
+
+                 </div>
+                 <div class="hero-text">
+                    <h5>Hi I'm <span class="input">Web Developer</span></h5>
+                    <h1><em>Ghazal Bouta</em></h1>
+                    <p><br> Full-stack developer</p></br>
+                    <p> I take great pleasure in being able to design and implement websites and web applications .And i chose Web-Development field
+                        because it offers endless opportunities for innovation and problem-solving.In addition to that , Technology is the exciting part that shapes the future.
+                        
+                    </p>
+                   
+
+                    <div class="btn-group">
+                       <a href="#" class="btn active">Download CV</a>
+                       <a href="./Contact.html" class="btn active">Contact</a>
+                    </div>
+
+                    
+
+
+                  
+
+                
+                
+                
+                    <div class="social">
+
+                        
+                        <a href="https://www.linkedin.com/in/ghazal-bouta-941a03215/"><i class="fa-brands fa-linkedin"></i></a>
+                    
+                        <a href="https://github.com/GhazalBouta"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                 </div>
+            </div>
+        </div>
+     </div>
+  
+
+     <!---typed js for typing text effect-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+     <script>
+        /** creating button click show hide navbar **/
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new Typed(".input",{
+            strings:["Web Developer"],
+            typedSpeed:70,
+            backSpeed:55,
+            loop:true
+        })
+     </script>
+
+</body>
+</html>
+

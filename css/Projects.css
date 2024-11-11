@@ -1,0 +1,161 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0px;
+    font-family: poppins,sans-serif;
+    text-decoration: none;
+}
+body{
+    
+    background: url(../images/gradient-technological-background_23-2148884155.avif);
+   background-repeat: no-repeat;
+   background-size: cover ;
+   
+}
+
+
+
+.wrapper{
+    width:1280px;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header{
+    padding: 40px 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+   
+}
+
+
+.logo{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo i{
+    height: 45px;
+    width:45px;
+    background-color: #007ced;
+    border-radius: 50%;
+    color:#fff;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    text-align: center;
+    
+}
+.logo .logo-text{
+    font-size: 24px;
+    font-weight: 500;
+    color:#fff;
+}
+
+
+nav .navlinks{
+    list-style-type: none;
+}
+nav .navlinks li{
+    display: inline-block;
+}
+nav .navlinks li a{
+     color:#e5e5e5;
+     margin-right: 2.5rem;
+}
+
+main h2{
+   padding:70px;
+    font-weight: bolder;
+    color: antiquewhite;
+    font-size: 25px;
+    text-align: center;
+    
+}
+.projects {
+    display: flex; /* Use Flexbox */
+    padding: 50px;
+    flex-wrap: wrap; /* Allow wrapping of items */
+    justify-content: center; /* Center the project cards */
+    gap: 15px; /* Space between project cards */
+  
+    
+}
+
+.project-card {
+    background-color: #f9f9f9; /* Background color for the project card */
+    border: 1px solid #ccc; /* Border for the project card */
+    border-radius: 8px; /* Rounded corners */
+    margin:20px;
+    padding: 30px; /* Padding inside the card */
+    width: 300px; /* Fixed width for project cards */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center; /* Center text inside the card */
+}
+
+.project-card h3 {
+    margin: 10px 0; /* Margin for the title */
+}
+
+.project-card p {
+    margin: 10px 0; /* Margin for the description */
+}
+
+.project-card a {
+    text-decoration: none; /* Remove underline from links */
+    color: #007bff; /* Link color */
+    font-weight: bold; /* Bold link text */
+}
+
+.project-card a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+/* Respnosiv design & displaying navbar for small screen */
+@media (max-width: 800px) {
+    body {
+      width: 100%;
+    }
+  
+    header {
+      padding: 2rem;
+    }
+  }
+  @media (max-width: 570px) {
+    header .fa-bars {
+      display: block;
+    }
+  
+    header .navbar {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      border-top: 5px solid rgba(175, 152, 173, 0.877);
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+  
+    header #toggler:checked ~ .navbar {
+      clip-path: polygon(0 0, 100% 100%, 0% 100%);
+    }
+  
+    header .navbar a {
+      margin: 5px;
+      padding: 5px;
+  
+      display: block;
+    }
+  
+    header .navbar a:hover {
+      color: rgb(6, 153, 109);
+    }
+  
+    h1,
+    p {
+      padding: 35%;
+    }
+  }
