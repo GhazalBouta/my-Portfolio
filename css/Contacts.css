@@ -121,53 +121,44 @@ nav .navlinks li a{
     width: 100%;
   }
 
-  
-/* Respnosiv design & displaying navbar for small screen */
-@media (max-width: 800px) {
-    body {
-      width: 100%;
-    }
-  
-    header {
-      padding: 2rem;
-    }
-  }
-  @media (max-width: 570px) {
-    header .fa-bars {
-      display: block;
-    }
-  
-    header .navbar {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      right: 0;
-      border-top: 5px solid rgba(175, 152, 173, 0.877);
-      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    }
-  
-    header #toggler:checked ~ .navbar {
-      clip-path: polygon(0 0, 100% 100%, 0% 100%);
-    }
-  
-    header .navbar a {
-      margin: 5px;
-      padding: 5px;
-  
-      display: block;
-    }
-  
-    header .navbar a:hover {
-      color: rgb(6, 153, 109);
-    }
-  
-    h1,
-    p {
-      padding: 35%;
-    }
-  }
-  
-  
-  
-   
  
+/* Responsive Design */
+@media (max-width: 800px) {
+  .contact-form {
+      padding: 30px; /* Less padding on smaller screens */
+  }
+
+  .contact-form h1 {
+      font-size: 20px; /* Smaller font size for heading */
+  }
+
+  .txtb label {
+      font-size: 10px; /* Smaller font size for labels */
+  }
+ 
+
+  .btn {
+      font-size: 14px; /* Smaller font size for buttons */
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-form {
+      padding: 15px; /* Further reduce padding */
+      margin: 15px; /* Reduce margin for smaller screens */
+  }
+
+  .contact-form h1 {
+      font-size: 18px; /* Further reduce heading size */
+      
+      padding: 5px;
+  }
+
+  .txtb label {
+      font-size: 9px; /* Further reduce label size */
+  }
+ 
+  .btn {
+      font-size: 12px; /* Further reduce button size */
+  }
+}

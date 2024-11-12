@@ -115,47 +115,48 @@ main h2{
 .project-card a:hover {
     text-decoration: underline; /* Underline on hover */
 }
+
 /* Respnosiv design & displaying navbar for small screen */
 @media (max-width: 800px) {
-    body {
-      width: 100%;
-    }
-  
-    header {
-      padding: 2rem;
-    }
+  body {
+    width: 100%;
   }
-  @media (max-width: 570px) {
-    header .fa-bars {
-      display: block;
-    }
-  
-    header .navbar {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      right: 0;
-      border-top: 5px solid rgba(175, 152, 173, 0.877);
-      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    }
-  
-    header #toggler:checked ~ .navbar {
-      clip-path: polygon(0 0, 100% 100%, 0% 100%);
-    }
-  
-    header .navbar a {
-      margin: 5px;
-      padding: 5px;
-  
-      display: block;
-    }
-  
-    header .navbar a:hover {
-      color: rgb(6, 153, 109);
-    }
-  
-    h1,
-    p {
-      padding: 35%;
-    }
+
+  header {
+    padding: 2rem;
   }
+}
+@media (max-width: 570px) {
+  header .fa-bars {
+    display: block;
+  }
+
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    border-top: 5px solid rgba(175, 152, 173, 0.877);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  header #toggler:checked ~ .navbar {
+    clip-path: polygon(0 0, 100% 100%, 0% 100%);
+  }
+
+  header .navbar a {
+    margin: 5px;
+    padding: 5px;
+
+    display: block;
+  }
+
+  header .navbar a:hover {
+    color: rgb(6, 153, 109);
+  }
+
+  h1,
+  p {
+    padding: 35%;
+  }
+}
